@@ -16,7 +16,7 @@
    * @return { Number }    current total
    */
  function _load (x) {
-  validator(x)
+  validator(x);
  	_total = x;
  	return _total;
  }
@@ -27,6 +27,7 @@
    * @return { Number }
    */
  function _getTotal() {
+
    return _total;
  }
 
@@ -35,6 +36,7 @@
    * @param { Number } x
    */
  function _add(x) {
+  validator(x);
    _total += x;
  }
 
@@ -43,6 +45,7 @@
    * @param  { Number } x
    */
    function _subtract(x) {
+    validator(x);
      _total -= x;
    }
 
@@ -51,6 +54,7 @@
    * @param  { Number } x
    */
    function _multiply(x) {
+    validator(x);
      _total *= x;
    }
 
@@ -59,6 +63,7 @@
    * @param  { Number } x
    */
    function _divide(x) {
+    validator(x);
      _total /= x;
    }
 
