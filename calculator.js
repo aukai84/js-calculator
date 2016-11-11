@@ -72,7 +72,9 @@
   /**
    * Stores the value of `total` to `memory`
    */
-
+   function _storeTotal( ) {
+      _memory = _total;
+   }
 
   /**
    * Clear the value stored at `memory`
@@ -88,6 +90,7 @@
     subtract: _subtract,
     multiply: _multiply,
     divide: _divide,
-    recallMemory: _getMemory
+    recallMemory: _getMemory,
+    saveMemory: _storeTotal
    };
  }
