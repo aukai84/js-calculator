@@ -57,13 +57,17 @@
    * Divides the value passing in by `total`
    * @param  { Number } x
    */
-
+   function _divide(x) {
+     _total /= x;
+   }
 
   /**
    * Return the value stored at `memory`
    * @return { Number }
    */
-
+   function _getMemory() {
+     return _memory;
+   }
 
   /**
    * Stores the value of `total` to `memory`
@@ -82,6 +86,8 @@
     getTotal: _getTotal,
     add: _add,
     subtract: _subtract,
-    multiply: _multiply
+    multiply: _multiply,
+    divide: _divide,
+    recallMemory: _getMemory
    };
  }
