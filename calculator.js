@@ -8,7 +8,7 @@
  function calculatorModule () {
  	var _memory = 0;
  	var _total = 0;
- 
+
 
   /**
    * sets the `total` to the number passed in
@@ -19,13 +19,15 @@
  	_total = x;
  	return _total;
  }
-   
-   
+
+
   /**
    * Return the value of `total`
    * @return { Number }
    */
-
+ function _getTotal() {
+   return _total;
+ }
 
   /**
    * Sums the value passed in with `total`
@@ -70,6 +72,8 @@
    * Validation
    */
    return {
+   	load: _load,
+    getTotal: _getTotal,
 
    };
  }
