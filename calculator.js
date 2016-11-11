@@ -33,7 +33,9 @@
    * Sums the value passed in with `total`
    * @param { Number } x
    */
-
+ function _add(x) {
+   _total += x;
+ }
 
   /**
    * Subtracts the value passed in from `total`
@@ -74,6 +76,6 @@
    return {
    	load: _load,
     getTotal: _getTotal,
-
+    add: _add
    };
  }
