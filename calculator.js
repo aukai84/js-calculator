@@ -108,3 +108,4 @@
     clearMemory: _clear
    };
  }
+
