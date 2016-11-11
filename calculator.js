@@ -49,7 +49,9 @@
    * Multiplies the value by `total`
    * @param  { Number } x
    */
-
+   function _multiply(x) {
+     _total *= x;
+   }
 
   /**
    * Divides the value passing in by `total`
@@ -80,5 +82,6 @@
     getTotal: _getTotal,
     add: _add,
     subtract: _subtract,
+    multiply: _multiply
    };
  }
