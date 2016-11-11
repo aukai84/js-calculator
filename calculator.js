@@ -16,6 +16,7 @@
    * @return { Number }    current total
    */
  function _load (x) {
+  validator(x)
  	_total = x;
  	return _total;
  }
@@ -85,6 +86,11 @@
   /**
    * Validation
    */
+   function validator(x) {
+     if (typeof x !== "number") {
+      throw Error();
+     }
+   }
    return {
    	load: _load,
     getTotal: _getTotal,
