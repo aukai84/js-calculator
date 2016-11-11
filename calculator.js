@@ -5,15 +5,22 @@
  * @variable PRIVATE { Number } `total`
  * @return {object} `calculator` object that can be used
  */
-
+ function calculatorModule () {
+ 	var _memory = 0;
+ 	var _total = 0;
+ 
 
   /**
    * sets the `total` to the number passed in
    * @param  { Number } x
    * @return { Number }    current total
    */
-
-
+ function _load (x) {
+ 	_total = x;
+ 	return _total;
+ }
+   
+   
   /**
    * Return the value of `total`
    * @return { Number }
@@ -62,4 +69,7 @@
   /**
    * Validation
    */
+   return {
 
+   };
+ }
