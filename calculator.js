@@ -79,7 +79,9 @@
   /**
    * Clear the value stored at `memory`
    */
-
+   function _clear() {
+     _memory = 0;
+   }
   /**
    * Validation
    */
@@ -91,6 +93,7 @@
     multiply: _multiply,
     divide: _divide,
     recallMemory: _getMemory,
-    saveMemory: _storeTotal
+    saveMemory: _storeTotal,
+    clearMemory: _clear
    };
  }
