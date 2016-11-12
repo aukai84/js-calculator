@@ -6,7 +6,7 @@
  * @return {object} `calculator` object that can be used
  */
  function calculatorModule () {
- 	var _memory = 0;
+  var _memory = 0;
  	var _total = 0;
 
 
@@ -15,38 +15,39 @@
    * @param  { Number } x
    * @return { Number }    current total
    */
- function _load (x) {
-  validator(x);
- 	_total = x;
- 	return _total;
- }
+  function _load (x) {
+    validator(x);
+ 	  _total = x;
+ 	  return _total;
+  }
+
 
 
   /**
    * Return the value of `total`
    * @return { Number }
    */
- function _getTotal() {
+  function _getTotal() {
 
    return _total;
- }
+  }
 
   /**
    * Sums the value passed in with `total`
    * @param { Number } x
    */
- function _add(x) {
-  validator(x);
-   _total += x;
- }
+  function _add(x) {
+    validator(x);
+    _total += x;
+  }
 
   /**
    * Subtracts the value passed in from `total`
    * @param  { Number } x
    */
-   function _subtract(x) {
+  function _subtract(x) {
     validator(x);
-     _total -= x;
+    _total -= x;
    }
 
   /**
@@ -67,6 +68,9 @@
      _total /= x;
    }
 
+
+
+
   /**
    * Return the value stored at `memory`
    * @return { Number }
@@ -81,6 +85,7 @@
    function _storeTotal( ) {
       _memory = _total;
    }
+
 
   /**
    * Clear the value stored at `memory`
